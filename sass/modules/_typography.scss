@@ -1,1 +1,30 @@
 // font styles, sizes ect
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700,900|Montserrat:400,900');
+
+// font-family: 'Montserrat', sans-serif;
+// font-family: 'Merriweather', serif;
+
+$f-header: 'Merriweather', serif;
+$f-body: 'Montserrat', sans-serif;
+
+$fw-n: 400;
+$fw-b: 900;
+//Merriweather only
+$fw-semi-b: 700;
+
+@mixin body($fs: 1rem, $color: $dark-gray, $lh: 1.5rem) {
+    font-size: $fs;
+    color: $color;
+    line-height: $lh;
+    font-family: $f-body;
+    font-weight: $fw-n;
+}
+
+@mixin header($fs: 2rem, $color: $dark-gray, $lh: 1.5rem) {
+    font-size: $fs;
+    color: $color;
+    line-height: $lh;
+    font-family: $f-header;
+    font-weight: $fw-b;
+}
+
