@@ -12,7 +12,7 @@ $fw-b: 900;
 //Merriweather only
 $fw-semi-b: 700;
 
-@mixin body($fs: 1rem, $color: $dark-gray, $lh: 1.5rem) {
+@mixin font-body($fs: 1rem, $color: $dark-gray, $lh: 1.5rem) {
     font-size: $fs;
     color: $color;
     line-height: $lh;
@@ -20,7 +20,7 @@ $fw-semi-b: 700;
     font-weight: $fw-n;
 }
 
-@mixin header($fs: 2rem, $color: $dark-gray, $lh: 1.5rem) {
+@mixin font-header($fs: 2rem, $color: $dark-gray, $lh: 1.5rem) {
     font-size: $fs;
     color: $color;
     line-height: $lh;
