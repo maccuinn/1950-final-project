@@ -1,0 +1,47 @@
+.banner {
+    position: relative;
+    text-align: center;
+
+    h1 {
+        @include font-header($fs: 3rem, $color: $white, $lh: 1.5rem);
+        text-shadow: 1px 1px 5px $dark-gray;
+    }
+
+    .header-1 {
+        position: absolute;
+        top: 10%;
+        right: 16%;        
+    }
+
+    .header-2 {
+        position: absolute;
+        top: 25%;
+        right: 12%;
+    }
+
+    @media screen and (max-width: $tabletLandscape) {
+        h1 {
+            font-size: 2rem;
+        }
+    }
+
+    @media screen and (max-width: $phoneLandscape) {
+        h1 {
+            font-size: 1.5rem;
+        }
+        .header-1 {
+            right: 10%;
+        }
+        .header-2 {
+            right: 8%;
+        }
+    }
+
+    @media screen and (max-width: $phonePortrait) {
+        h1 {
+            font-size: 1rem;
+        }
+    }
+
+}
+

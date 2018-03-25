@@ -370,4 +370,42 @@ body p {
   font-family: "Montserrat", sans-serif;
   font-weight: 400; }
 
+.banner {
+  position: relative;
+  text-align: center; }
+  .banner h1 {
+    font-size: 3rem;
+    color: #ffffff;
+    line-height: 1.5rem;
+    font-family: "Merriweather", serif;
+    font-weight: 900;
+    text-shadow: 1px 1px 5px #2C2C2C; }
+  .banner .header-1 {
+    position: absolute;
+    top: 10%;
+    right: 16%; }
+  .banner .header-2 {
+    position: absolute;
+    top: 25%;
+    right: 12%; }
+  @media screen and (max-width: 1024px) {
+    .banner h1 {
+      font-size: 2rem; } }
+  @media screen and (max-width: 670px) {
+    .banner h1 {
+      font-size: 1.5rem; }
+    .banner .header-1 {
+      right: 10%; }
+    .banner .header-2 {
+      right: 8%; } }
+  @media screen and (max-width: 420px) {
+    .banner h1 {
+      font-size: 1rem; } }
+
+header {
+  background: #005385; }
+
+nav ul {
+  margin: 0; }
+
 /*# sourceMappingURL=styles.css.map */

@@ -9,7 +9,9 @@
     ?>
     <main>
         <div class="banner">
-            <img src="/images/student-main-banner.jpg" alt="Three Students Sitting On Grass Looking At Laptops">
+            <img src="/images/banner-img.jpg" alt="Three Students Sitting On Grass Looking At Laptops">
+            <h1 class="header-1">Web Development</h1>
+            <h1 class="header-2">And Design 2</h1>
         </div>
 
         <section class="intro">
