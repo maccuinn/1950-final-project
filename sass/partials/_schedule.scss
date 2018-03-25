@@ -1,0 +1,15 @@
+.schedule-content {
+    padding: 0 30px 30px 30px;
+    h1{
+        text-align: center;
+    }
+}
+
+.all-schedule-items {
+    @include grid-four-col;
+
+    .schedule-item {
+        border: 3px $banner-lt-blue solid;
+        padding: 20px;
+    }
+}

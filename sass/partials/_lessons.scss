@@ -1,0 +1,36 @@
+.lesson-content{
+    padding: 0 30px 30px 30px;
+    text-align: center;
+}
+
+.all-lessons {
+    @include grid-four-col;
+
+    .lesson {
+        position: relative;
+        border: 3px $banner-lt-blue solid;
+
+        img {
+            @include img-cover($abs-pos: true);
+        }
+
+        p {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            margin: 0;
+            padding: 10px;
+            background-color: $banner-lt-blue;
+            @include font-body($fs: 1.2rem, $color: $white, $lh: 1.5rem);
+        }
+    }
+
+    .lesson::before {
+        content: "";
+        display: inline-block;
+        width: 1px;
+        height: 0;
+        padding-bottom: calc(100% / (3 / 2) );
+    }
+}

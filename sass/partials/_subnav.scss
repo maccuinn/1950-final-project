@@ -1,0 +1,28 @@
+.two-column {
+    @include grid-two-col;
+}
+
+.sub-nav {
+    background-color: $banner-lt-blue;
+
+    ul {
+        list-style: none;
+        padding-top: 50px;
+
+        li {
+            padding: 20px 0px;
+        }
+    }
+
+    a {
+        @include plain-link;
+        @include font-body($fs: 1.2rem, $color: $white, $lh: 1.5rem);
+    }
+
+    a:hover,
+    a:focus,
+    a:active {
+        cursor: pointer;
+        color: $yellow;
+    }
+}
