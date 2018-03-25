@@ -1,3 +1,11 @@
 header {
     background: $banner-blue;
+    position: relative;
+
+    img {
+        position: absolute;
+        top: 40%;
+        left: 4%;
+        z-index: 100;
+    }
 }

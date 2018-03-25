@@ -357,18 +357,26 @@ table {
 body {
   margin: 0; }
 
-body h1 {
-  font-size: 2rem;
-  color: #2C2C2C;
-  line-height: 1.5rem;
-  font-family: "Merriweather", serif;
-  font-weight: 900; }
-body p {
+body {
   font-size: 1rem;
   color: #2C2C2C;
   line-height: 1.5rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 400; }
+  body h1 {
+    font-size: 2rem;
+    color: #2C2C2C;
+    line-height: 1.5rem;
+    font-family: "Merriweather", serif;
+    font-weight: 900;
+    letter-spacing: 1.4; }
+  body h2 {
+    font-size: 1.2rem;
+    color: #2C2C2C;
+    line-height: 1.5rem;
+    font-family: "Merriweather", serif;
+    font-weight: 900;
+    letter-spacing: 1.2; }
 
 .banner {
   position: relative;
@@ -379,6 +387,7 @@ body p {
     line-height: 1.5rem;
     font-family: "Merriweather", serif;
     font-weight: 900;
+    letter-spacing: 1.4;
     text-shadow: 1px 1px 5px #2C2C2C; }
   .banner .header-1 {
     position: absolute;
@@ -403,9 +412,92 @@ body p {
       font-size: 1rem; } }
 
 header {
-  background: #005385; }
+  background: #005385;
+  position: relative; }
+  header img {
+    position: absolute;
+    top: 40%;
+    left: 4%;
+    z-index: 100; }
 
 nav ul {
-  margin: 0; }
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  height: 80px; }
+nav li {
+  width: 120px; }
+nav a {
+  display: block;
+  font-size: 1.2rem;
+  color: #ffffff;
+  line-height: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  text-decoration: none; }
+nav .login {
+  color: #FAA916; }
+nav a:hover,
+nav a:focus,
+nav a:active {
+  cursor: pointer;
+  color: #FAA916; }
+
+footer {
+  background: #005385;
+  padding: 2rem 15%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 260px;
+  grid-template-areas: "header1 header2 header3" "about-nav reg-nav address"; }
+  footer .course-header {
+    grid-area: header1;
+    border-bottom: 1px solid rgba(224, 228, 231, 0.5); }
+  footer .reg-header {
+    grid-area: header2;
+    border-bottom: 1px solid rgba(224, 228, 231, 0.5); }
+  footer .address {
+    grid-area: header3;
+    border-bottom: 1px solid rgba(224, 228, 231, 0.5); }
+  footer .course {
+    grid-area: about-nav; }
+  footer .resistration {
+    grid-area: reg-nav; }
+  footer .address-info {
+    grid-area: address; }
+  footer h2 {
+    font-size: 1rem;
+    color: #E0E4E7;
+    font-weight: 400; }
+  footer p {
+    color: #E0E4E7;
+    font-size: .8rem;
+    margin: 0;
+    padding: .5rem 0; }
+  footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+    footer ul li {
+      padding: .5rem 0; }
+    footer ul a {
+      text-decoration: none;
+      color: #E0E4E7;
+      font-weight: 400;
+      font-size: .8rem; }
+  @media screen and (max-width: 850px) {
+    footer {
+      padding: 2rem 5%; } }
+  @media screen and (max-width: 670px) {
+    footer {
+      text-align: center;
+      grid-template-columns: 1fr;
+      grid-template-areas: "header1" "about-nav"             "header2" "reg-nav" "header3" "address"; }
+      footer .course-header,
+      footer .reg-header,
+      footer .address {
+        border-top: 1px solid rgba(224, 228, 231, 0.5); } }
 
 /*# sourceMappingURL=styles.css.map */

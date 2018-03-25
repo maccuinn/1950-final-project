@@ -1,12 +1,13 @@
 // base styles to be applied to the whole site. 
 
 body {
+    @include font-body();
+
     h1 {
-        @include font-header()
+        @include font-header();
     }
 
-    p {
-        @include font-body()
+    h2 {
+        @include font-header($fs: 1.2rem, $color: $dark-gray, $lh: 1.5rem, $ls: 1.2);
     }
-    
 }

@@ -1,5 +1,34 @@
 nav {
     ul {
         margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        height: 80px;
     }
+
+    li {
+        width: 120px;
+    }
+
+    a {
+        display: block;
+        @include font-body($fs: 1.2rem, $color: $white, $lh: 1.5rem);
+        text-decoration: none;
+    }
+
+    .login {
+        color: $yellow;
+    }
+
+
+    a:hover,
+    a:focus,
+    a:active {
+        cursor: pointer;
+        color: $yellow;
+    }
+    
 }
