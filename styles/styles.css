@@ -378,10 +378,10 @@ body {
     font-weight: 900;
     letter-spacing: 1.2; }
 
-.banner {
+.home-page .banner {
   position: relative;
   text-align: center; }
-  .banner h1 {
+  .home-page .banner h1 {
     font-size: 3rem;
     color: #ffffff;
     line-height: 1.5rem;
@@ -389,27 +389,35 @@ body {
     font-weight: 900;
     letter-spacing: 1.4;
     text-shadow: 1px 1px 5px #2C2C2C; }
-  .banner .header-1 {
+  .home-page .banner .header-1 {
     position: absolute;
     top: 10%;
     right: 16%; }
-  .banner .header-2 {
+  .home-page .banner .header-2 {
     position: absolute;
     top: 25%;
     right: 12%; }
   @media screen and (max-width: 1024px) {
-    .banner h1 {
+    .home-page .banner h1 {
       font-size: 2rem; } }
   @media screen and (max-width: 670px) {
-    .banner h1 {
+    .home-page .banner h1 {
       font-size: 1.5rem; }
-    .banner .header-1 {
+    .home-page .banner .header-1 {
       right: 10%; }
-    .banner .header-2 {
+    .home-page .banner .header-2 {
       right: 8%; } }
   @media screen and (max-width: 420px) {
-    .banner h1 {
+    .home-page .banner h1 {
       font-size: 1rem; } }
+.home-page .employment {
+  background: #005385;
+  color: #E0E4E7; }
+  .home-page .employment h2 {
+    font-size: 2rem;
+    text-align: center; }
+    .home-page .employment h2 span {
+      color: #FAA916; }
 
 header {
   background: #005385;

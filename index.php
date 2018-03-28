@@ -7,7 +7,7 @@
     <?php
         include 'templates/header.php';
     ?>
-    <main>
+    <main class="home-page">
         <div class="banner">
             <img src="/images/banner-img.jpg" alt="Three Students Sitting On Grass Looking At Laptops">
             <h1 class="header-1">Web Development</h1>
@@ -64,7 +64,7 @@
         </section>
 
         <section class="employment">
-            <h2>96% Of BCIT Grads Are Employed</h2>
+            <h2>96% Of BCIT Grads Are <span>Employed</span></h2>
             <p>Prepare yourself for a career in web. Take one course, or apply this course to a part-time certificate. Work at your own pace, in the evenings or weekends. A Flexible schedule that fits your lifestyle.</p>
             <a href="#0">Student Outcomes</a>
         </section>

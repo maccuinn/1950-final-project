@@ -3,10 +3,10 @@
     <h2 class="reg-header">Registration Info</h2>
     <h2 class="address">Find Us</h2>
     <ul class="course">
-        <li><a href="">Outline</a></li>
-        <li><a href="">Schedule</a></li>
-        <li><a href="">Lessons</a></li>
-        <li><a href="">Contact</a></li>
+        <li><a href="../outline.php">Outline</a></li>
+        <li><a href="../schedule.php">Schedule</a></li>
+        <li><a href="../lessons.php">Lessons</a></li>
+        <li><a href="../contact.php">Contact</a></li>
     </ul>
     <ul class="registration">
         <li><a href="#0">Talk With An Advisor</a></li>
