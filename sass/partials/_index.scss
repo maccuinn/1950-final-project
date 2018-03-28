@@ -295,4 +295,14 @@
         }
     }
 }
+.wrapper {
+    max-width: 1200px;
+    background-color: $off-white;
+    margin: 0 auto;
+}
+
+body {
+    background-color: $wrapper;
+}
+
 

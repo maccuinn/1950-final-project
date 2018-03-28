@@ -665,6 +665,14 @@ footer {
   .home-page .description li {
     margin-bottom: .5rem; }
 
+.wrapper {
+  max-width: 1200px;
+  background-color: #F7FAFB;
+  margin: 0 auto; }
+
+body {
+  background-color: #d6d8db; }
+
 .lesson-content {
   padding: 0 30px 30px 30px;
   text-align: center; }
