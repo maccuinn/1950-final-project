@@ -46,9 +46,218 @@
         }
     }
 
+    .intro {
+        max-width: 850px;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        margin: 0 auto;
+        display: grid;
+        grid-template-areas: 
+                    "header sidebar"
+                    "details sidebar"
+                    "advantage sidebar";
+        grid-column-gap: 2em;
+        grid-row-gap: 2em;
+    }
+
+    .intro-header {
+        grid-area: header;
+        text-align: center;
+
+        h2 {
+            font-size: 1.5rem;
+
+            span {
+                color: $red;
+            }
+        }
+
+        p {
+            font-size: 1.2rem;
+        }
+    }
+
+    .skills {
+        border: 1px solid $dark-gray;
+        @include shadow();
+        grid-area: details;
+        display: grid;
+        grid-template-areas: 
+                    "header header"
+                    "left right"
+                    ". outcome";
+
+        h3 {
+            grid-area: header;
+            text-align: center;
+
+            span {
+                color: $yellow;
+            }
+        }
+
+        .left,
+        .right {
+            justify-self: center;
+        }
+
+        .left {
+            grid-area: left;
+        }
+
+        .right {
+            grid-area: right;
+        }
+
+        .outcomes {
+            grid-area: outcome;
+            padding: 0 0 1rem;
+            justify-self: right;
+            margin-right: 1rem;
+
+            a {
+                display: inline-block;
+                padding: .5em;
+                border: 1px $dark-gray;
+                @include shadow();
+                color: $dark-gray;
+                text-decoration: none;
+            }
+
+            a:hover,
+            a:focus,
+            a:active {
+                cursor: pointer;
+                color: $yellow;
+            }
+        }
+    }
+
+    .advantage {
+        grid-area: advantage;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid $dark-gray;
+        @include shadow();
+
+        h3 {
+            text-align: center;
+
+            span {
+                color: $yellow;
+            }
+        }
+
+        .btn {
+            align-self: flex-end;
+            margin-right: 1rem;
+            padding: 0 0 1rem;
+            a {
+                display: inline-block;
+                padding: .5em;
+                border: 1px $dark-gray;
+                @include shadow();
+                color: $dark-gray;
+                text-decoration: none;
+            }
+
+            a:hover,
+            a:focus,
+            a:active {
+                cursor: pointer;
+                color: $yellow;
+            }
+        }
+    }
+
+    .secondary-nav {
+        grid-area: sidebar;
+        justify-self: right;
+        display: flex;
+        flex-direction: column;
+        width: 250px;
+        background-color: rgba($banner-blue, 0.15);
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        h2 {
+            padding-left: 1rem;
+            background: $banner-blue;
+            padding: .5em;
+            color: $font-blue;
+            margin: 0;
+        }
+
+        li {
+            background: $font-blue;
+            margin: 0;
+            padding: .5rem .5rem .5rem 1rem;
+            border-bottom: 1px solid $off-white;
+        }
+
+        a {
+            text-decoration: none;
+            color: $dark-gray;
+            cursor: pointer;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: $yellow;
+        }
+
+        .prereq {
+            border: 1px solid $dark-gray;
+            margin: 1rem;
+            background: $off-white;
+
+            h3 {
+                color: $red;
+                text-align: center;
+            }
+
+            p {
+                padding: 0 0 0 1rem;
+                margin: 0;
+            }
+
+            p:nth-of-type(even) {
+                font-style: italic;
+            }
+
+            p:last-of-type {
+                margin-bottom: 1rem;
+            }
+        }
+        .register-btn {
+            margin-bottom: 1rem;
+            margin-right: 1rem;
+            align-self: flex-end;
+            
+            
+            a {
+                display: inline-block;
+                padding: .5rem;
+                background: $red;
+                color: $off-white;
+                @include shadow();
+                border: 1px solid $off-white;
+            }
+        }
+    }
+
     .employment {
         background: $banner-blue;
         color: $font-blue;
+        padding: 2em 2em;
+        display: flex;
+        flex-direction: column;
+        
 
         h2 {
             span {
@@ -57,7 +266,33 @@
             font-size: 2rem;
             text-align: center;
         }
+
+        .content {
+            width: calc(100% - 650px);
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+
+            a {
+                display: inline-block;
+                align-self: flex-end;
+                background: $red;
+                padding: .5em;
+                color: $off-white;
+                text-decoration: none;
+                border: 1px solid $off-white;
+                @include shadow();
+            }
+        }
     }
-    
+    .description {
+        padding: 4rem 0;
+        max-width: 850px;
+        margin: 0 auto;
+        
+        li {
+            margin-bottom: .5rem;
+        }
+    }
 }
 

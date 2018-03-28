@@ -191,4 +191,8 @@ $aspect-ratios: (
 
 }
 
+@mixin shadow($ho: 1px, $vo: 1px, $b: 4px, $c: $dark-gray) {
+    box-shadow: $ho $vo $b $dark-gray;
+}
+
 
