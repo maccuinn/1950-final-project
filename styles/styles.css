@@ -503,6 +503,8 @@ footer {
 .lesson-content {
   padding: 0 30px 30px 30px;
   text-align: center; }
+  .lesson-content .lesson-section {
+    text-align: left; }
 
 .all-lessons {
   display: grid;
