@@ -2,6 +2,8 @@
 
 body {
     @include font-body();
+    background-color: $wrapper;
+
 
     h1 {
         @include font-header();
@@ -11,3 +13,10 @@ body {
         @include font-header($fs: 1.2rem, $color: $dark-gray, $lh: 1.5rem, $ls: 1.2);
     }
 }
+
+.wrapper {
+    max-width: 1200px;
+    background-color: $off-white;
+    margin: 0 auto;
+}
+

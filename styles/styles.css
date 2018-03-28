@@ -362,7 +362,8 @@ body {
   color: #2C2C2C;
   line-height: 1.5rem;
   font-family: "Montserrat", sans-serif;
-  font-weight: 400; }
+  font-weight: 400;
+  background-color: #d6d8db; }
   body h1 {
     font-size: 2rem;
     color: #2C2C2C;
@@ -377,6 +378,11 @@ body {
     font-family: "Merriweather", serif;
     font-weight: 900;
     letter-spacing: 1.2; }
+
+.wrapper {
+  max-width: 1200px;
+  background-color: #F7FAFB;
+  margin: 0 auto; }
 
 header {
   background: #005385;
@@ -664,14 +670,6 @@ footer {
   margin: 0 auto; }
   .home-page .description li {
     margin-bottom: .5rem; }
-
-.wrapper {
-  max-width: 1200px;
-  background-color: #F7FAFB;
-  margin: 0 auto; }
-
-body {
-  background-color: #d6d8db; }
 
 .lesson-content {
   padding: 0 30px 30px 30px;

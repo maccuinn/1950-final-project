@@ -4,6 +4,7 @@
         include 'templates/head.php';
     ?>
 <body>
+    <div class="wrapper">
     <?php
         include 'templates/header.php';
     ?>
@@ -21,5 +22,6 @@
     <?php
         include 'templates/footer.php';
     ?>
+    </div>
 </body>
 </html>
