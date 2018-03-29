@@ -6,7 +6,7 @@
 }
 
 .all-schedule-items {
-    @include grid-four-col;
+    @include grid-three-col;
 
     .schedule-item {
         border: 3px $banner-lt-blue solid;

@@ -8,7 +8,7 @@
 }
 
 .all-lessons {
-    @include grid-four-col;
+    @include grid-three-col;
 
     .lesson {
         position: relative;

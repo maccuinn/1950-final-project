@@ -141,6 +141,13 @@
     grid-gap: 20px;
 }
 
+//Three column grid for gallery display
+@mixin grid-three-col {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
 // Aspect Ratio Presets
 $ar-video: (9 / 16) * 100%;
 $ar-square: (1 / 1) * 100%;
