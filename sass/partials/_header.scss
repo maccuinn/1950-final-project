@@ -5,11 +5,11 @@ header {
     img {
         position: absolute;
         top: 40%;
-        left: 4%;
+        left: 3%;
         z-index: 100;
     }
 
-    @media screen and (max-width: $phonePortrait) {
+    @media screen and (max-width: $tabletPortrait) {
         .header-row {
             display: flex;
             justify-content: space-between;

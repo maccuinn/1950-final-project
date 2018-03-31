@@ -1,7 +1,7 @@
 .hamburger {
     display: none;
     
-    @media screen and (max-width: $phonePortrait) {
+    @media screen and (max-width: $tabletPortrait) {
 
         display: block;
         border: none;

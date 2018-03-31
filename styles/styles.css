@@ -413,9 +413,9 @@ header {
   header img {
     position: absolute;
     top: 40%;
-    left: 4%;
+    left: 3%;
     z-index: 100; }
-  @media screen and (max-width: 420px) {
+  @media screen and (max-width: 850px) {
     header .header-row {
       display: flex;
       justify-content: space-between; }
@@ -428,7 +428,7 @@ header {
 
 .hamburger {
   display: none; }
-  @media screen and (max-width: 420px) {
+  @media screen and (max-width: 850px) {
     .hamburger {
       display: block;
       border: none;
@@ -488,7 +488,7 @@ nav a:focus,
 nav a:active {
   cursor: pointer;
   color: #FAA916; }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 850px) {
   nav {
     width: 100%;
     padding-bottom: 1em;

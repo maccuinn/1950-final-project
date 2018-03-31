@@ -30,7 +30,7 @@ nav {
         color: $yellow;
     }
     
-    @media screen and (max-width: $phonePortrait) {
+    @media screen and (max-width: $tabletPortrait) {
         $border: 1px solid $dark-gray;
         width: 100%;
         padding-bottom: 1em;
