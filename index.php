@@ -93,21 +93,21 @@
 
         <section id="lo" class="description">
             <h2>Upon Successful Completion Of This Course, You Will Be Able To:</h2>
-        <ul>
-            <li>Mark up pages using latest HTML technologies, including HTML5.</li>
-            <li>Utilize CSS to control page layout and presentation, including CSS3.</li>
-            <li>Add behaviour to any web page using JavaScript.</li>
-            <li>Create dynamic content using JavaScript frameworks like jQuery.</li>
-            <li>Employ Web Standards when building web sites for maximum compatibility.</li>
-            <li>Understand concepts for Search Engine Optimized content (SEO).</li>
-            <li>Implement Server Side Includes for efficient web development.</li>
-            <li>Create template-driven pages for use in Content Management systems.</li>
-            <li>Understand basic development methodology.</li>
-            <li>Use media queries to create Responsive designs for mobile and desktop presentation.</li>
-            <li>Use HTML5 technologies to present rich content such as video, audio and geolocation.</li>
-            <li>Create professional looking typography using web-based fonts.</li>
-            <li>Understand source control using GIT.</li>
-        </ul>
+            <ul>
+                <li>Mark up pages using latest HTML technologies, including HTML5.</li>
+                <li>Utilize CSS to control page layout and presentation, including CSS3.</li>
+                <li>Add behaviour to any web page using JavaScript.</li>
+                <li>Create dynamic content using JavaScript frameworks like jQuery.</li>
+                <li>Employ Web Standards when building web sites for maximum compatibility.</li>
+                <li>Understand concepts for Search Engine Optimized content (SEO).</li>
+                <li>Implement Server Side Includes for efficient web development.</li>
+                <li>Create template-driven pages for use in Content Management systems.</li>
+                <li>Understand basic development methodology.</li>
+                <li>Use media queries to create Responsive designs for mobile and desktop presentation.</li>
+                <li>Use HTML5 technologies to present rich content such as video, audio and geolocation.</li>
+                <li>Create professional looking typography using web-based fonts.</li>
+                <li>Understand source control using GIT.</li>
+            </ul>
         </section>
 
     </main>

@@ -1,6 +1,6 @@
 <header>
     <div class="header-row">
-        <img src="/images/logo.png" alt="">
+        <img src="/images/logo.png" alt="BCIT Logo">
         <button class="hamburger">
             <span class="hamburger-content">
                 <span class="hamburger-icon" tabindex="-1">&#9776;</span>
