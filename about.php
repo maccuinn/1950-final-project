@@ -5,10 +5,13 @@
     ?>
 <body>
     <div class="wrapper">
-    <?php
-        include 'templates/header.php';
-    ?>
+    
     <main>
+    <div class="banner-content">
+        <?php
+            include 'templates/header.php';
+        ?>
+    </div>
 
     </main>
     <?php

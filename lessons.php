@@ -5,10 +5,13 @@
     ?>
 <body>
     <div class="wrapper">
-    <?php
-        include 'templates/header.php';
-    ?>
+    
     <main>
+    <div class="banner-content">
+        <?php
+            include 'templates/header.php';
+        ?>
+    </div>
     <div class="two-column">
     <?php
         include 'templates/subnav.php';
@@ -72,5 +75,8 @@
         include 'templates/footer.php';
     ?>
     </div>
+    <?php 
+        include 'templates/scripts.php';
+    ?>
 </body>
 </html>
