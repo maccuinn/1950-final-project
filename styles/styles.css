@@ -392,6 +392,52 @@ header {
     top: 40%;
     left: 4%;
     z-index: 100; }
+  @media screen and (max-width: 420px) {
+    header .header-row {
+      display: flex;
+      justify-content: space-between; }
+    header img {
+      position: initial;
+      height: 60px;
+      margin-left: 4%;
+      margin-top: 4%; } }
+
+.hamburger {
+  display: none; }
+  @media screen and (max-width: 420px) {
+    .hamburger {
+      display: block;
+      border: none;
+      background-color: transparent;
+      padding: 0;
+      margin: 0;
+      width: 37px;
+      height: 37px;
+      margin-right: 1em;
+      margin-top: 1em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      cursor: pointer; }
+      .hamburger .hamburger-icon {
+        color: #E0E4E7;
+        line-height: .5;
+        font-size: 2em; }
+      .hamburger .hamburger:focus,
+      .hamburger .hamburger-icon:focus {
+        outline: none; }
+      .hamburger .hamburger:focus .hamburger-icon {
+        outline: 5px solid rgba(250, 169, 22, 0.5); }
+      .hamburger .hamburger-text {
+        margin: -1px;
+        padding: 0;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        clip: rect(0, 0, 0, 0);
+        position: absolute; } }
 
 nav ul {
   margin: 0;
@@ -418,6 +464,31 @@ nav a:focus,
 nav a:active {
   cursor: pointer;
   color: #FAA916; }
+@media screen and (max-width: 420px) {
+  nav {
+    width: 100%;
+    padding-bottom: 1em;
+    display: none;
+    border-bottom: 1px solid #2C2C2C;
+    z-index: 150;
+    background: rgba(44, 44, 44, 0.5); }
+    nav ul {
+      display: block;
+      z-index: 150;
+      height: auto; }
+    nav li {
+      width: 100%; }
+    nav a {
+      border-bottom: #E0E4E7;
+      line-height: 60px;
+      text-align: center; }
+    nav a:hover,
+    nav a:focus,
+    nav a:active {
+      background: #E0E4E7;
+      color: #2C2C2C; }
+    .show nav {
+      display: block; } }
 
 footer {
   background: #005385;

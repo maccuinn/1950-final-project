@@ -5,15 +5,17 @@
     ?>
 <body>
     <div class="wrapper">
-    <?php
-        include 'templates/header.php';
-    ?>
     <main class="home-page">
+    <div class="banner-content">
+        <?php
+            include 'templates/header.php';
+        ?>
         <div class="banner">
             <img src="/images/banner-img.jpg" alt="Three Students Sitting On Grass Looking At Laptops">
             <h1 class="header-1">Web Development</h1>
             <h1 class="header-2">And Design 2</h1>
         </div>
+    </div>
 
         <section class="intro">
             <div class="intro-header">
@@ -113,5 +115,8 @@
         include 'templates/footer.php';
     ?>
     </div>
+    <?php 
+        include 'templates/scripts.php';
+    ?>
 </body>
 </html>
