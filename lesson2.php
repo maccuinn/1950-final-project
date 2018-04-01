@@ -177,38 +177,150 @@
                 <p>These represent some big changes in HTML, allowing for more flexibility in coding and specifying content. Many of these will replace and reduce the need for many <strong>div</strong> tags. eg: instead of the typical <strong>&lt;div id="header"></strong>, use <strong>&lt;header></strong>.</p>
                 <p>Having trouble deciding which tag to use for what content? Try this <a href="http://html5doctor.com/downloads/h5d-sectioning-flowchart.pdf" target="_blank">HTML5 flowchart</a>.</p>
                 <h3>HTML5 Semantic Alterations</h3>
-                <p></p>
+                <p>HTML5 also brings a few notable semantic alterations to older tags:</p>
                 <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a" target="_blank">&lt;a></a> though still an inline tag, it is now ok to nest multiple block level tags (headings, paragraphs etc) inside an anchor tag</li>
+                    <li><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/small" target="_blank">&lt;small></a> no longer a 'physical' tag for smaller sized print, it now has semantic value: meaning 'small print', i.e. 'legalese'. the <strong>big</strong> element has been deprecated</li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/b" target="_blank">&lt;b></a> no longer means 'render bold'. now it means the text is 'stylistically offset from the normal text', without conveying any extra importance. to convey extra importance, use <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong" target="_blank">&lt;strong></a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/i" target="_blank">&lt;i></a> now means the text is 'in an alternate voice or mood', without conveying any extra emphasis. to convey extra emphasis, use <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/em" target="_blank">&lt;em></a></li>
+                    <li>Deprecated tags: <strong>&lt;big></strong>, <strong>&lt;font></strong>, <strong>&lt;strike></strong>, and a few more. Developers should use CSS instead of these deprecated tags.</li>
+                    <li>Deprecated attributes: <strong>align</strong>, <strong>bgcolor</strong>, <strong>border</strong>, <strong>height</strong>, <strong>size</strong>, <strong>type</strong>, <strong>width</strong> and more. Developers should use CSS instead of these deprecated attributes.</li>
                 </ul>
-                <h3></h3>
-                <p></p>
-                <h4></h4>
+                <h3>HTML5 Content Models</h3>
+                <p>Pre-HTML5, there were basically two categories of tags: inline and block. HTML5 introduces a more nuanced set of categories that allow for greater semantic sectioning of content. The content model will help the browser to determine the semantics of your content.</p>
+                <h4>Content Models</h4>
                 <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li>text-level content: most inline tags</li>
+                    <li>grouping content: most block tags</li>
+                    <li>replaced content: all the form widgets and related tags</li>
+                    <li>embedded content: video, audio, canvas</li>
+                    <li>sectioning content: new structural, semantic options</li>
                 </ul>
-                <h3></h3>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
+                <h3>Sectioning Content</h3>
+                <p>The <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section" target="_blank">&lt;section></a> tag can be used to semantically group content. It can remove ambiguity when a page is being processed by the browser, a screen reader, or search engine.</p>
+                <p>For example, imagine you have created the following code:</p>
+                <p>Since content that follows a heading is presumed to be associated with that heading, the code above carries plenty of semantic value already. But, if the <strong>small</strong> tag's content is intended to apply to all cities, a browser has no way of knowing that. It will instead assume the <strong>small</strong> tag is associated with the preceding heading (<strong>&lt;h3>Tokyo&lt;/h3></strong>)</p>
+                <p>Use the <strong>section</strong> tag to explicitly demarcate the start and end of the related content:</p>
+                <p>This new sectioning will inform the browser that the <strong>small</strong> is associated with the <strong>h1</strong></p>
+                <p>In HTML5, each piece of sectioned content has its own self-contained outline. This means you won’t need to worry as much about which level heading tag to use. You can use an <strong>h1</strong> inside a section and it will be treated as the heading of the section, and have lesser semantic impact than an <strong>h1</strong> that is at a higher level.</p>    
             </section>
             <section class="lesson-section forms">
-                <h2>Agenda</h2>
-               
+                <h2>Forms</h2>
+                <p>HTML 5 adds several new <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input" target="_blank">form attributes</a> that prove quite useful, even if some are as yet poorly supported.</p>
+                <ul>
+                    <li><strong>placeholder="value"</strong>: prepopulates field with data</li>
+                    <li><strong>autofocus="autofocus"</strong>: sets the input to have cursor focus</li>
+                    <li><strong>required="required"</strong>: ensures field is filled in before submission</li>
+                    <li>There are also several new <strong>&lt;input></strong> type attribute variants:
+                        <ul>
+                            <li><strong>type="email"</strong>: checks for the pattern of emails</li>
+                            <li><strong>type="url"</strong>: web addresses</li>
+                            <li><strong>type="date"</strong>: calendar popup</li>
+                            <li><strong>type="tel"</strong>: telephone numbers</li>
+                            <li><strong>type="search"</strong>: formats text input as search input</li>
+                            <li><strong>type="color"</strong>: color picker popup</li>
+                            <li><strong>type="range"</strong>: sliding scales</li>
+                            <li><strong>type="pattern"</strong>: regular expression pattern matching</li>
+                        </ul>
+                    </li>
+                </ul>
             </section>
-        
+            <section class="lesson-section svg">
+                <h2>Scaleable Vector Graphics</h2>
+                <p><a href="http://www.w3.org/Graphics/SVG/" target="_blank">Scaleable Vector Graphics (SVG)</a> can be embedded into HTML5 documents. SVG are 100% scalable without the pixelated effect that scaled raster images can suffer from. SVG file data is stored as text, so they are much smaller in file size than a raster equivalent.</p>
+                <p>You can use SVG graphics with the <strong>img</strong> tag, just as with raster graphics. You can also use .svg as a CSS <strong>background-image</strong>.<br/
+                <strong>&lt;img src="images/logo.svg" alt="COMP 1950 logo" /></strong></p>
+                <p>The <strong>png</strong> on the left is 26KB. The <strong>.svg</strong> on the right is only 4KB.</p>
+                <p><img src="images/comp1950_logo.png" alt="COMP 1950 png logo"><img src="images/comp1950_logo.svg" alt="COMP 1950 svg logo"></p>
+                <p>Alternatively, you can use SVG code 'inline' with the <strong>svg</strong> tag. The advantage of doing this is it will result in one less request/response between the client and the server. The disadvantage to inline SVG is that it adds considerable clutter to your <strong>.html</strong> code. Just copy the source code from your <strong>.svg</strong> file and paste it directly into your <strong>.html</strong>!</p>
+                <p><strong>&lt;svg viewBox="0 0 55 28"><br/>
+                <span class=”tabbed”>&lt;!-- svg code goes here... sometimes there is a LOT of code here! --></span><br/>
+                &lt;/svg></strong></p>
+                <h3>SVG Tools</h3>
+                <p>Use an SVG application to help you create and manipulate your SVG code.</p>
+                <ul>
+                    <li><a href="http://www.adobe.com/ca/products/illustrator.html" target="_blank">Adobe Illustrator</a></li>
+                    <li><a href="https://inkscape.org/en/" target="_blank">Inkscape</a> (Open source, Windows/Mac/Linux)</li>
+                </ul>
+            </section>
+            <section class="lesson-section multimedia">
+                <h2>Multimedia</h2>
+                <p>HTML5's more responsive multimedia features have made it easier to provide appropriately formatted video and audio to the client.</p>
+                <h3>Audio</h3>
+                <p>The <a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/audio" target="_blank">audio</a> element provides a way to offer many audio formats to the client, allowing the browser to choose the one most suitable.</p>
+                <p>The most common audio formats for the web are: <strong>audio/mp3</strong>, <strong>audio/mpeg</strong> and <strong>audio/ogg</strong>.</p>
+                <h4>Each audio tag may contain:</h4>
+                <ul>
+                    <li><strong>source</strong> tags as children of the <strong>audio</strong> tag, one for each audio format available. Each <strong>source</strong> must have a <strong>src</strong> (path to audio file) and <strong>type</strong> (audio file MIME type)</li>
+                    <li><strong>controls="controls"</strong> give the user control over the audio *important for usability*</li>
+                    <li><strong>loop="loop"</strong> loop audio playback</li>
+                    <li><strong>preload="none"</strong> don’t load the audio until the user clicks 'play', <strong>preload="metadata"</strong> preloads the clip duration statistic only, <strong>preload="auto"</strong> loads the audio clip to the client before they click 'play'</li>
+                    <li><strong>autoplay="autoplay"</strong> begin playing audio as soon as page is loaded *NOT very user friendly*</li>
+                    <li>you may also wish to include a direct link for your users to download the file</li>
+                </ul>
+                <p><strong>&lt;audio controls="controls"><br/>
+                <span class=”tabbed”>&lt;source src="media/house-a-square.mpg" type="audio/mpeg" /><br/>
+                &lt;source src="media/house-a-square.mp3" type="audio/mp3" /><br/>
+                &lt;source src="media/house-a-square.ogg" type="audio/ogg" /></span><br/>
+                &lt;/audio></strong></p>
+                <audio controls="controls">
+                    <source src="media/house-a-square.mp3" type="audio/mp3" />
+                </audio>
+                <p><a href="media/house-a-square.mp3">Download the audio</a></p>
+                <h3>Video</h3>
+                <p>The <a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/video" target="_blank">video</a> element provides a way to offer many video formats to the client, allowing the browser to choose the one most suitable.</p>
+                <p>The most common video formats for the web are: <strong>video/mp4</strong>, <strong>video/ogg</strong> and <strong>video/webm</strong>.</p>
+                <h4>Each video tag may contain:</h4>
+                <ul>
+                    <li><strong>source</strong> tags as children of the <strong>video</strong> tag, one for each video format available. Each <strong>source</strong> must have a <strong>src</strong> (path to video file) and <strong>type</strong> (video file MIME type)</li>
+                    <li><strong>controls="controls"</strong> give the user control over the video playback *important for usability*</li>
+                    <li><strong>width="250" height="100"</strong> set the size of the video (use CSS instead. absolute values only, no percentages)</li>
+                    <li><strong>poster="image.jpg"</strong> display a static image when the video is not playing</li>
+                    <li><strong>loop="loop"</strong> loop playback</li>
+                    <li><strong>muted="muted"</strong> begin with audio silenced</li>
+                    <li><strong>preload="none"</strong> don’t load the video until the user clicks 'play', <strong>preload="metadata"</strong> preloads the clip duration statistic only, <strong>preload="auto"</strong> loads the clip to the client before they click 'play'</li>
+                    <li><strong>autoplay="autoplay"</strong> begin playing video as soon as page is loaded *NOT very user friendly*</li>
+                    <li>you may also wish to include a direct link for your users to download the file</li>
+                </ul>
+                <p><strong>&lt;video<span class=”tabbed”>preload="none"</span><br />
+                    <span class=”tabbed”>controls="controls"</span><br />
+                    <span class=”tabbed”>poster="media/poster-bear-in-water.jpg"></span><br /><br />
+
+                    <span class=”tabbed”> &lt;source src="media/bear-in-water.webm" type="video/webm" /></span><br />
+                    <span class=”tabbed”> &lt;source src="media/bear-in-water.mp4" type="video/mp4" /></span><br />
+                    <span class=”tabbed”> &lt;source src="media/bear-in-water.ogg" type="video/ogg" /></span><br />
+                &lt;/video></strong></p>
+                <video preload="none" controls="controls" poster="media/poster-bear-in-water.jpg">
+	                <source src="media/bear-in-water.mp4" type="video/mp4" />
+                </video>
+                <p><a href="">Download the video</a></p>
+            </section>
+            <section class="lesson-section html5-today">
+                <h2>HTML5 Today</h2>
+                <p>User agent browsers will have varying support for the HTML5 specification.</p>
+                <ul>
+                    <li><a href="https://caniuse.com/" target="_blank">caniuse.com</a> is an excellent source for compatibility testing</li>
+                    <li>Try the <a href="http://html5test.com/" target="_blank">HTML5Test</a> to test a specific browser.</li>
+                    <li>To ensure early versions of Internet Explorer will render HTML5 tags correctly, you can add the HTML5 shiv:
+                        <ul>
+                            <li><strong>&lt;script>document.createElement("article");&lt;/script></strong></li>
+                            <li>This creates an element called <strong>&lt;article></strong> which the browser (IE, in this case) can understand and style appropriately</li>
+                        </ul>
+                    </li>
+                    <li>Creating an entry for every element can get a bit heavy, so you can use the <a href="https://github.com/aFarkas/html5shiv" target="_blank">HTML5shiv</a> script written by <a href="http://remysharp.com/" target="_blank">Remy Sharp</a>. Insert a coded-comment that will apply the shiv ONLY with IE browsers earlier than version 9:<br />
+                    <strong>&lt;!--[if lt IE 9]></strong><br />
+                        <strong><span class="tabbed">&lt;script src="http://html5shiv.googlecode.com/svn/trunk/html5.js">&lt;/script></span></strong><br />
+                    <strong>&lt;![endif]--></strong></li>
+                    <li>Since HTML5 understands both HTML4 and XHTML tags, converting an older HTML file into HTML5 is simply a matter of updating the DOCTYPE and meta tag for charset.</li>
+                </ul>
+            </section>
+            <section class="lesson-section todo">
+                <h2>To Do</h2>
+                <ul>
+                    <li>Download, review, and complete the homework assignment from <a href="https://learn.bcit.ca/" target="_blank">D2L</a></li>
+                    <li>Review the <a href="http://bcitcomp.ca/1950/lecture/02/#semantics" target="_blank">HTML5 semantic tags</a>, know how and when to use them to maximize the semantic structure of your HTML.</li>
+                </ul>
+            </section>
         </div>       
     </div>
     </main>
