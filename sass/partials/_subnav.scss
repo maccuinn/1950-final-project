@@ -3,7 +3,7 @@
 }
 
 .sub-nav {
-    background-color: $banner-lt-blue;
+    background-color: $sub-nav-lt-blue;
 
     ul {
         list-style: none;
@@ -16,7 +16,7 @@
 
     a {
         @include plain-link;
-        @include font-body($fs: 1.2rem, $color: $white, $lh: 1.5rem);
+        @include font-body($fs: 1.2rem, $color: $dark-gray, $lh: 1.5rem);
     }
 
     a:hover,
