@@ -3,19 +3,44 @@
     flex-direction: column;
 
     .contact-info {
-        background: $contact-banner;
+        background: $banner-blue;
         display: flex;
         justify-content: space-around;
         padding: 2em 0;
 
+        h2 {
+            color: $font-blue;
+
+            span {
+                color: $yellow;
+            }
+        }
+
         .instructor-info {
-            background: rgba($yellow, 0.5);
+            background: $yellow;
             padding: 1em;
             @include shadow();
 
             h3 {
                 margin-top: 0;
             }
+        }
+    }
+
+    .course-contact {
+        ul {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: $font-blue;
+        }
+
+        a:hover,
+        a:active,
+        a:focus {
+            color: $yellow;
         }
     }
     

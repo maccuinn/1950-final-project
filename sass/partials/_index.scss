@@ -286,6 +286,18 @@
             p:last-of-type {
                 margin-bottom: 1rem;
             }
+
+            a {
+                text-decoration: none;
+                color: $red;
+                font-weight: $fw-b;
+            }
+
+            a:hover,
+            a:active,
+            a:focus {
+                color: $dark-gray;
+            }
         }
         .register-btn {
             margin-bottom: 1rem;

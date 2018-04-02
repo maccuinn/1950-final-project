@@ -15,7 +15,14 @@
     <div class="contact-page">
         <img src="/images/coffee-cropped.jpg" alt="Woman looking accross the street with a blurred background.">
         <div class="contact-info">
-            <h2>Give Us A Shout</h2>
+            <div class="course-contact">
+                <h2>Give Us A <span>Shout</span></h2>
+                <ul>
+                    <li><a href="#0">Talk With An Advisor</a></li>
+                    <li><a href="#0">Financial Aid</a></li>
+                    <li><a href="#0">Register</a></li>
+                </ul>
+            </div>
             <div class="instructor-info">
                 <h3>Contact Information</h3>
                 <p>Instructor: Michael Whyte</p>

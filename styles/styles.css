@@ -760,6 +760,14 @@ footer {
       font-style: italic; }
     .home-page .secondary-nav .prereq p:last-of-type {
       margin-bottom: 1rem; }
+    .home-page .secondary-nav .prereq a {
+      text-decoration: none;
+      color: #721817;
+      font-weight: 900; }
+    .home-page .secondary-nav .prereq a:hover,
+    .home-page .secondary-nav .prereq a:active,
+    .home-page .secondary-nav .prereq a:focus {
+      color: #2C2C2C; }
   .home-page .secondary-nav .register-btn {
     margin-bottom: 1rem;
     margin-right: 1rem;
@@ -978,16 +986,29 @@ footer {
   display: flex;
   flex-direction: column; }
   .contact-page .contact-info {
-    background: #D6D2D2;
+    background: #005385;
     display: flex;
     justify-content: space-around;
     padding: 2em 0; }
+    .contact-page .contact-info h2 {
+      color: #E0E4E7; }
+      .contact-page .contact-info h2 span {
+        color: #FAA916; }
     .contact-page .contact-info .instructor-info {
-      background: rgba(250, 169, 22, 0.5);
+      background: #FAA916;
       padding: 1em;
       box-shadow: 1px 1px 4px #2C2C2C; }
       .contact-page .contact-info .instructor-info h3 {
         margin-top: 0; }
+  .contact-page .course-contact ul {
+    list-style: none; }
+  .contact-page .course-contact a {
+    text-decoration: none;
+    color: #E0E4E7; }
+  .contact-page .course-contact a:hover,
+  .contact-page .course-contact a:active,
+  .contact-page .course-contact a:focus {
+    color: #FAA916; }
   .contact-page .contact-form {
     display: flex;
     flex-direction: column;

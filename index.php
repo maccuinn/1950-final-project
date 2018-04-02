@@ -38,7 +38,7 @@
                     <li>SEO</li>
                 </ul>
                 <div class="outcomes">
-                    <a href="#0">Learning Outcomes</a>
+                    <a href="#lo">Learning Outcomes</a>
                 </div>
             </div>
 
@@ -58,7 +58,7 @@
             <div class="secondary-nav">
                 <h2>About This Course</h2>
                 <ul>
-                    <li><a href="ouline.php">Course Details</a></li>
+                    <li><a href="outline.php">Course Details</a></li>
                     <li><a href="#lo">Learning Outcomes</a></li>
                     <li><a href="schedule.php">Course Schedule</a></li>
                     <li><a href="lessons.php">Lessons</a></li>
@@ -71,7 +71,7 @@
                 </ul>
                 <div class="prereq">
                     <h3>Prerequisites</h3>
-                    <p>COMP 1850</p>
+                    <p><a href="#0">COMP 1850</a></p>
                     <P>or</P>
                     <p>Equivalent HTML5</p>
                     <p>and</p>
