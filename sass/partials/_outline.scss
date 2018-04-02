@@ -1,0 +1,122 @@
+.outline-page {
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+        text-align: center;
+    }
+
+    .outline-head {
+        background: $banner-blue;
+        color: $font-blue;
+        padding: 2em 2em;
+        display: grid;
+        justify-items: start;
+        text-shadow: 1px 1px $dark-gray;
+        grid-template-columns: 1fr 1fr 1fr;
+
+        grid-template-areas: 
+                "header left-one right-one"
+                " . left-two right-two";
+        grid-row-gap: 1em;
+        grid-column-gap: 4em;
+
+        h2 {
+            grid-area: header;
+            color: $font-blue;
+            justify-self: center;
+            text-shadow: 1px 1px $dark-gray;
+        }
+
+        .left-one {
+            grid-area: left-one;
+        }
+
+        .left-two {
+            grid-area: left-two;
+        }
+        
+        .right-one {
+            grid-area: right-one;
+            //padding-left:15%;
+            //justify-self: right;
+        }
+
+        .right-two {
+            grid-area: right-two;
+            //padding-left:15%;
+            //justify-self: right;
+        }
+    }
+
+    .description {
+        h2 {
+            margin-bottom: 2em;
+        }
+        padding: $desktop-padding-section 6em;
+    }
+
+    .goals {
+        background: $banner-blue;
+        color: $font-blue;
+        padding: 2em;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        h2 {
+            color: $font-blue;
+        }
+
+        p {
+            //text-align: center;
+            margin: 0 auto;
+        }
+    }
+
+    .outcomes {
+        padding: $desktop-padding-section;
+        margin: 0 auto;
+
+        h2 {
+            margin-bottom: 2em;
+        }
+
+        p {
+            @include font-header($fs: 1em, $color: $dark-gray, $lh: 1.5em, $ls: 1.4, $fw: $fw-semi-b);
+            padding-left: 2em;
+        }
+    }
+
+    .evaluation {
+        table {
+            background: rgba($yellow, 0.6);
+            margin: 0 auto;
+            padding: 2em;
+            margin-bottom: 4em;
+            color: $dark-blue-font;
+            font-weight: $fw-semi-b;
+            letter-spacing: 2px;
+            @include shadow;
+            //text-shadow: 1px 1px $font-blue;
+
+            caption {
+                padding: 1em 0;
+                font-size: 1.5em;
+            }
+
+            td:nth-of-type(odd) {
+                padding: 1em 2em;
+            }
+
+            td:nth-of-type(even) {
+                padding: 0 2em;
+            }
+
+            .bottom {
+                border-top: 1px solid $dark-blue-font;
+                color: $red;
+            }
+        }
+    }
+}

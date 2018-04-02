@@ -886,4 +886,81 @@ footer {
     border: 3px rgba(0, 83, 133, 0.5) solid;
     padding: 20px; }
 
+.outline-page {
+  display: flex;
+  flex-direction: column; }
+  .outline-page h2 {
+    text-align: center; }
+  .outline-page .outline-head {
+    background: #005385;
+    color: #E0E4E7;
+    padding: 2em 2em;
+    display: grid;
+    justify-items: start;
+    text-shadow: 1px 1px #2C2C2C;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "header left-one right-one" " . left-two right-two";
+    grid-row-gap: 1em;
+    grid-column-gap: 4em; }
+    .outline-page .outline-head h2 {
+      grid-area: header;
+      color: #E0E4E7;
+      justify-self: center;
+      text-shadow: 1px 1px #2C2C2C; }
+    .outline-page .outline-head .left-one {
+      grid-area: left-one; }
+    .outline-page .outline-head .left-two {
+      grid-area: left-two; }
+    .outline-page .outline-head .right-one {
+      grid-area: right-one; }
+    .outline-page .outline-head .right-two {
+      grid-area: right-two; }
+  .outline-page .description {
+    padding: 4em 6em; }
+    .outline-page .description h2 {
+      margin-bottom: 2em; }
+  .outline-page .goals {
+    background: #005385;
+    color: #E0E4E7;
+    padding: 2em;
+    display: flex;
+    align-items: center;
+    flex-direction: column; }
+    .outline-page .goals h2 {
+      color: #E0E4E7; }
+    .outline-page .goals p {
+      margin: 0 auto; }
+  .outline-page .outcomes {
+    padding: 4em;
+    margin: 0 auto; }
+    .outline-page .outcomes h2 {
+      margin-bottom: 2em; }
+    .outline-page .outcomes p {
+      font-size: 1em;
+      color: #2C2C2C;
+      line-height: 1.5em;
+      font-family: "Merriweather", serif;
+      font-weight: 700;
+      letter-spacing: 1.4;
+      padding-left: 2em; }
+  .outline-page .evaluation table {
+    background: rgba(250, 169, 22, 0.6);
+    margin: 0 auto;
+    padding: 2em;
+    margin-bottom: 4em;
+    color: #003760;
+    font-weight: 700;
+    letter-spacing: 2px;
+    box-shadow: 1px 1px 4px #2C2C2C; }
+    .outline-page .evaluation table caption {
+      padding: 1em 0;
+      font-size: 1.5em; }
+    .outline-page .evaluation table td:nth-of-type(odd) {
+      padding: 1em 2em; }
+    .outline-page .evaluation table td:nth-of-type(even) {
+      padding: 0 2em; }
+    .outline-page .evaluation table .bottom {
+      border-top: 1px solid #003760;
+      color: #721817; }
+
 /*# sourceMappingURL=styles.css.map */
