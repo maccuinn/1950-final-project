@@ -12,7 +12,7 @@
         ?>
     </div>
     <div class="outline-page">
-        <img src="/images/street-cropped.png" alt="Woman looking accross the street with a blurred background.">
+        <img src="/images/outline.jpg" alt="Computer screens overlayed with 1s and 0s.">
         <div class="outline-head">
             <h2>Course Outline</h2>
             <p class="left-one">Course: COMP 1950</p>
