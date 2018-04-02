@@ -3,6 +3,10 @@
     h1{
         text-align: center;
     }
+
+    @media screen and (max-width: $tabletPortrait) {
+        padding: 0 20px 20px 20px;
+    }
 }
 
 .all-schedule-items {
@@ -11,5 +15,47 @@
     .schedule-item {
         border: 3px $banner-lt-blue solid;
         padding: 20px;
+
+        h2 {
+            margin: 0;
+        }
+
+        @media screen and (max-width: $phoneLandscape) {
+            padding: 10px;
+
+            ul {
+                padding-left: 20px;
+            }
+            
+            li {
+                @include font-body($fs: 0.8em, $color: $dark-gray, $lh: 1.3em);
+            }
+
+            a {
+                font-size: 0.8em;
+            }
+        }
+
+        @media screen and (max-width: 500px) {    
+            ul {
+                padding-left: 30px;
+            }
+            
+            li {
+                @include font-body($fs: 1em, $color: $dark-gray, $lh: 1.5em);
+            }
+
+            a {
+                font-size: 1.0em;
+            }
+        }
+    }
+
+    @media screen and (max-width: $tabletLandscape) {
+        @include grid-two-col;
+    }
+
+    @media screen and (max-width: 500px) {
+        @include grid-one-col;
     }
 }

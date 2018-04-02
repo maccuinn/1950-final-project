@@ -931,6 +931,9 @@ footer {
   padding: 0 30px 30px 30px; }
   .schedule-content h1 {
     text-align: center; }
+  @media screen and (max-width: 850px) {
+    .schedule-content {
+      padding: 0 20px 20px 20px; } }
 
 .all-schedule-items {
   display: grid;
@@ -939,6 +942,42 @@ footer {
   .all-schedule-items .schedule-item {
     border: 3px rgba(0, 83, 133, 0.5) solid;
     padding: 20px; }
+    .all-schedule-items .schedule-item h2 {
+      margin: 0; }
+    @media screen and (max-width: 670px) {
+      .all-schedule-items .schedule-item {
+        padding: 10px; }
+        .all-schedule-items .schedule-item ul {
+          padding-left: 20px; }
+        .all-schedule-items .schedule-item li {
+          font-size: 0.8em;
+          color: #2C2C2C;
+          line-height: 1.3em;
+          font-family: "Montserrat", sans-serif;
+          font-weight: 400; }
+        .all-schedule-items .schedule-item a {
+          font-size: 0.8em; } }
+    @media screen and (max-width: 500px) {
+      .all-schedule-items .schedule-item ul {
+        padding-left: 30px; }
+      .all-schedule-items .schedule-item li {
+        font-size: 1em;
+        color: #2C2C2C;
+        line-height: 1.5em;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400; }
+      .all-schedule-items .schedule-item a {
+        font-size: 1.0em; } }
+  @media screen and (max-width: 1024px) {
+    .all-schedule-items {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 20px; } }
+  @media screen and (max-width: 500px) {
+    .all-schedule-items {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 15px; } }
 
 .outline-page {
   display: flex;
