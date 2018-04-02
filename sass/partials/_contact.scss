@@ -1,0 +1,97 @@
+.contact-page {
+    display: flex;
+    flex-direction: column;
+
+    .contact-info {
+        background: $contact-banner;
+        display: flex;
+        justify-content: space-around;
+        padding: 2em 0;
+
+        .instructor-info {
+            background: rgba($yellow, 0.5);
+            padding: 1em;
+            @include shadow();
+
+            h3 {
+                margin-top: 0;
+            }
+        }
+    }
+    
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: $desktop-padding-section 0;
+    }
+
+    .form-container {
+        background-image: url(../images/contact-background.jpg);
+        padding: 2em;
+        max-width: 750px;
+        min-width: 730px;
+    }
+
+    form {
+        display: grid;
+        grid-template-columns: 2fr 2fr 1fr 2fr 2fr; 
+        grid-template-areas: 
+                "label-1 radio-1 .  snumber snumber"
+                "label-2 radio-2 . . ."
+                "fname fname . lname lname"
+                "email email email email email"
+                "message message message  message message"
+                ". . . . submit";
+        
+        grid-row-gap: 1em;
+        grid-column-gap: 1em;
+
+        [for="radio-1"] {
+            grid-area: label-1;
+        }
+
+        #radio-1 {
+            grid-area: radio-1;
+        }
+
+        [for="radio-2"] {
+            grid-area: label-2;
+        }
+
+        #radio-2 {
+            grid-area: radio-2;
+        }
+
+        [for="radio-1"],
+        [for="radio-2"] {
+            color: $yellow;
+            vertical-align: middle;
+        }
+
+        [name="fname"] {
+            grid-area: fname;
+            color: $font-blue;
+        }
+
+        [name="snumber"] {
+            grid-area: snumber;
+        }
+
+        [name="lname"] {
+            grid-area: lname;
+        }
+
+        [name="email"] {
+            grid-area: email;
+        }
+
+        [name="message"] {
+            grid-area: message;
+        }
+
+        button {
+            grid-area: submit;
+        }
+    }
+}

@@ -963,4 +963,60 @@ footer {
       border-top: 1px solid #003760;
       color: #721817; }
 
+.contact-page {
+  display: flex;
+  flex-direction: column; }
+  .contact-page .contact-info {
+    background: #D6D2D2;
+    display: flex;
+    justify-content: space-around;
+    padding: 2em 0; }
+    .contact-page .contact-info .instructor-info {
+      background: rgba(250, 169, 22, 0.5);
+      padding: 1em;
+      box-shadow: 1px 1px 4px #2C2C2C; }
+      .contact-page .contact-info .instructor-info h3 {
+        margin-top: 0; }
+  .contact-page .contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4em 0; }
+  .contact-page .form-container {
+    background-image: url(../images/contact-background.jpg);
+    padding: 2em;
+    max-width: 750px;
+    min-width: 730px; }
+  .contact-page form {
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr 2fr 2fr;
+    grid-template-areas: "label-1 radio-1 .  snumber snumber" "label-2 radio-2 . . ." "fname fname . lname lname" "email email email email email" "message message message  message message" ". . . . submit";
+    grid-row-gap: 1em;
+    grid-column-gap: 1em; }
+    .contact-page form [for="radio-1"] {
+      grid-area: label-1; }
+    .contact-page form #radio-1 {
+      grid-area: radio-1; }
+    .contact-page form [for="radio-2"] {
+      grid-area: label-2; }
+    .contact-page form #radio-2 {
+      grid-area: radio-2; }
+    .contact-page form [for="radio-1"],
+    .contact-page form [for="radio-2"] {
+      color: #FAA916;
+      vertical-align: middle; }
+    .contact-page form [name="fname"] {
+      grid-area: fname;
+      color: #E0E4E7; }
+    .contact-page form [name="snumber"] {
+      grid-area: snumber; }
+    .contact-page form [name="lname"] {
+      grid-area: lname; }
+    .contact-page form [name="email"] {
+      grid-area: email; }
+    .contact-page form [name="message"] {
+      grid-area: message; }
+    .contact-page form button {
+      grid-area: submit; }
+
 /*# sourceMappingURL=styles.css.map */
