@@ -1,5 +1,9 @@
 .two-column {
     @include grid-two-col;
+
+    @media screen and (max-width: $tabletPortrait) {
+        display: block;
+    }
 }
 
 .sub-nav {
@@ -8,15 +12,13 @@
     ul {
         list-style: none;
         padding-top: 50px;
-
-        li {
-            padding: 20px 0px;
-        }
     }
 
     a {
         @include plain-link;
         @include font-body($fs: 1.2rem, $color: $dark-gray, $lh: 1.5rem);
+        line-height: 75px;
+        display: block;
     }
 
     a:hover,
@@ -24,5 +26,33 @@
     a:active {
         cursor: pointer;
         color: $yellow;
+    }
+
+    @media screen and (max-width: $tabletPortrait) {
+        display: none;
+        width: 100%;
+        padding-bottom: 1em;
+
+        ul {
+            height: auto;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+        a {
+            line-height: 60px
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: $white;
+            background-color: $dark-blue-font;
+        }
+
+        .show & {
+            display: block;
+        }
     }
 }
