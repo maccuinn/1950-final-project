@@ -899,7 +899,7 @@ footer {
     justify-items: start;
     text-shadow: 1px 1px #2C2C2C;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: "header left-one right-one" " . left-two right-two";
+    grid-template-areas: "header left-one right-one" " . left-two right-two" ". prereq .";
     grid-row-gap: 1em;
     grid-column-gap: 4em; }
     .outline-page .outline-head h2 {
@@ -907,6 +907,16 @@ footer {
       color: #E0E4E7;
       justify-self: center;
       text-shadow: 1px 1px #2C2C2C; }
+    .outline-page .outline-head .prereq {
+      grid-area: prereq; }
+      .outline-page .outline-head .prereq a {
+        text-decoration: none;
+        color: #FAA916;
+        cursor: pointer; }
+      .outline-page .outline-head .prereq a:hover,
+      .outline-page .outline-head .prereq a:focus,
+      .outline-page .outline-head .prereq a:active {
+        color: #E0E4E7; }
     .outline-page .outline-head .left-one {
       grid-area: left-one; }
     .outline-page .outline-head .left-two {
@@ -927,7 +937,8 @@ footer {
     align-items: center;
     flex-direction: column; }
     .outline-page .goals h2 {
-      color: #E0E4E7; }
+      color: #E0E4E7;
+      margin-top: 0; }
     .outline-page .goals p {
       margin: 0 auto; }
   .outline-page .outcomes {

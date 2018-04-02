@@ -14,11 +14,12 @@
     <div class="outline-page">
         <img src="/images/outline.jpg" alt="Computer screens overlayed with 1s and 0s.">
         <div class="outline-head">
-            <h2>Course Outline</h2>
+            <h2>Course Outline:</h2>
             <p class="left-one">Course: COMP 1950</p>
             <p class="right-one">Credits: 3</p>
             <p class="left-two">Length: 36 Lecture Hours</p>
             <p class="right-two">Cost: $448.00</p>
+            <p class="prereq">Prerequisites: <a href="#0">COMP 1850</a> or Equivalent CSS & HTML Knowledge</p>
         </div>
 
         <section class="description">
@@ -32,10 +33,10 @@
 
         <div class="goals">
             <h2>Course Goals</h2>
-            <div class="goal-desc">
-                <p>To gain a deeper understanding of HTML, CSS and advanced topics in web development.</p>
-                <p>To focus on best practices in web page and web site design.</p>
-            </div>
+            <ul class="goal-desc">
+                <li>To gain a deeper understanding of HTML, CSS and advanced topics in web development.</li>
+                <li>To focus on best practices in web page and web site design.</li>
+            </ul>
         </div>
 
         <section class="outcomes">

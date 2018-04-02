@@ -17,7 +17,8 @@
 
         grid-template-areas: 
                 "header left-one right-one"
-                " . left-two right-two";
+                " . left-two right-two"
+                ". prereq .";
         grid-row-gap: 1em;
         grid-column-gap: 4em;
 
@@ -26,6 +27,22 @@
             color: $font-blue;
             justify-self: center;
             text-shadow: 1px 1px $dark-gray;
+        }
+
+        .prereq {
+            grid-area: prereq;
+
+            a {
+                text-decoration: none;
+                color: $yellow;
+                cursor: pointer;
+            }
+
+            a:hover,
+            a:focus,
+            a:active {
+                color: $font-blue;
+            }
         }
 
         .left-one {
@@ -66,6 +83,7 @@
 
         h2 {
             color: $font-blue;
+            margin-top: 0;
         }
 
         p {
