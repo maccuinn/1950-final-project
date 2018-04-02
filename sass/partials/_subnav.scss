@@ -1,5 +1,5 @@
 .two-column {
-    @include grid-two-col;
+    @include subnav-two-col;
 
     @media screen and (max-width: $tabletPortrait) {
         display: block;

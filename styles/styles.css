@@ -849,12 +849,36 @@ footer {
       line-height: 1.5rem;
       font-family: "Montserrat", sans-serif;
       font-weight: 400; }
+      @media screen and (max-width: 670px) {
+        .all-lessons .lesson p {
+          font-size: 1rem;
+          color: #ffffff;
+          line-height: 1.15rem;
+          font-family: "Montserrat", sans-serif;
+          font-weight: 400; } }
+      @media screen and (max-width: 420px) {
+        .all-lessons .lesson p {
+          font-size: 1.2rem;
+          color: #ffffff;
+          line-height: 1.5rem;
+          font-family: "Montserrat", sans-serif;
+          font-weight: 400; } }
   .all-lessons .lesson::before {
     content: "";
     display: inline-block;
     width: 1px;
     height: 0;
     padding-bottom: calc(100% / (3 / 2) ); }
+  @media screen and (max-width: 1024px) {
+    .all-lessons {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 20px; } }
+  @media screen and (max-width: 420px) {
+    .all-lessons {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 15px; } }
 
 .two-column {
   display: grid;
