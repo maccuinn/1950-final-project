@@ -208,17 +208,13 @@
             align-items: center;
 
             ul {
-                padding-left: 0;
+                padding-left: 1em;
             }
         }
 
         @media screen and (max-width: 470px) {
             margin-bottom: 0;
             width: 410px;
-
-            ul {
-                list-style: none;
-            }
 
             li {
                 font-size: 0.9em;
@@ -469,8 +465,13 @@
             margin-bottom: .5rem;
         }
 
+        ul {
+            padding-left: 1em;
+        }
+
         @media screen and(max-width: $tabletLandscape) {
             padding: $tablet-padding-section 1em;
+
         }
     }
 }

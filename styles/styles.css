@@ -709,13 +709,11 @@ footer {
         margin-bottom: 2em;
         align-items: center; }
         .home-page .advantage ul {
-          padding-left: 0; } }
+          padding-left: 1em; } }
     @media screen and (max-width: 470px) {
       .home-page .advantage {
         margin-bottom: 0;
         width: 410px; }
-        .home-page .advantage ul {
-          list-style: none; }
         .home-page .advantage li {
           font-size: 0.9em; } }
     @media screen and (max-width: 420px) {
@@ -886,6 +884,8 @@ footer {
       text-align: center; }
     .home-page .description li {
       margin-bottom: .5rem; }
+    .home-page .description ul {
+      padding-left: 1em; }
     @media screen and (max-width: 1024px) {
       .home-page .description {
         padding: 2em 1em; } }
