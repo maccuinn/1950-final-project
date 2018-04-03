@@ -24,6 +24,38 @@
             h3 {
                 margin-top: 0;
             }
+
+            p a {
+                text-decoration: none;
+                color: $red;
+            }
+
+            a:hover,
+            a:active,
+            a:focus {
+                color: $font-blue;
+            }
+        }
+
+        @media screen and(max-width: 582px) {
+            flex-direction: column;
+            align-items: center;
+
+            .course-contact {
+                //order: 1;
+                margin-bottom: 1em;
+
+                h2 {
+                    text-align: center;
+                }
+
+                ul {
+                    padding-left: 0;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+            }
         }
     }
 
@@ -56,6 +88,11 @@
         padding: 2em;
         max-width: 750px;
         min-width: 730px;
+
+        @media screen and(max-width: 764px) {
+            padding: 1em;
+            min-width: 320px;
+        }
     }
 
     form {
@@ -117,6 +154,20 @@
 
         button {
             grid-area: submit;
+            background: $yellow;
+        }
+
+        @media screen and(max-width: 764px) {
+            grid-template-columns: 1fr 1fr; 
+            grid-template-areas: 
+                "label-1 radio-1"  
+                "label-2 radio-2"
+                "snumber snumber"
+                "fname fname" 
+                "lname lname"
+                "email email"
+                "message message"
+                ". submit";
         }
     }
 }

@@ -24,9 +24,9 @@
                 </ul>
             </div>
             <div class="instructor-info">
-                <h3>Contact Information</h3>
+                <h3>Instructor Information</h3>
                 <p>Instructor: Michael Whyte</p>
-                <p>Email: mywhyte13@learn.bcit.ca</p>
+                <p>Email:<a href="mailto:mywhyte13@learn.bcit.ca"> mywhyte13@learn.bcit.ca</a></p>
             </div>
         </div>
         <section class="contact-form">

@@ -1168,6 +1168,26 @@ footer {
       box-shadow: 1px 1px 4px #2C2C2C; }
       .contact-page .contact-info .instructor-info h3 {
         margin-top: 0; }
+      .contact-page .contact-info .instructor-info p a {
+        text-decoration: none;
+        color: #721817; }
+      .contact-page .contact-info .instructor-info a:hover,
+      .contact-page .contact-info .instructor-info a:active,
+      .contact-page .contact-info .instructor-info a:focus {
+        color: #E0E4E7; }
+    @media screen and (max-width: 582px) {
+      .contact-page .contact-info {
+        flex-direction: column;
+        align-items: center; }
+        .contact-page .contact-info .course-contact {
+          margin-bottom: 1em; }
+          .contact-page .contact-info .course-contact h2 {
+            text-align: center; }
+          .contact-page .contact-info .course-contact ul {
+            padding-left: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center; } }
   .contact-page .course-contact ul {
     list-style: none; }
   .contact-page .course-contact a {
@@ -1187,6 +1207,10 @@ footer {
     padding: 2em;
     max-width: 750px;
     min-width: 730px; }
+    @media screen and (max-width: 764px) {
+      .contact-page .form-container {
+        padding: 1em;
+        min-width: 320px; } }
   .contact-page form {
     display: grid;
     grid-template-columns: 2fr 2fr 1fr 2fr 2fr;
@@ -1217,6 +1241,11 @@ footer {
     .contact-page form [name="message"] {
       grid-area: message; }
     .contact-page form button {
-      grid-area: submit; }
+      grid-area: submit;
+      background: #FAA916; }
+    @media screen and (max-width: 764px) {
+      .contact-page form {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "label-1 radio-1"   "label-2 radio-2" "snumber snumber" "fname fname"  "lname lname" "email email" "message message" ". submit"; } }
 
 /*# sourceMappingURL=styles.css.map */
