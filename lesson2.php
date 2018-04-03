@@ -231,10 +231,10 @@
                 <p>You can use SVG graphics with the <strong>img</strong> tag, just as with raster graphics. You can also use .svg as a CSS <strong>background-image</strong>.<br/
                 <strong>&lt;img src="images/logo.svg" alt="COMP 1950 logo" /></strong></p>
                 <p>The <strong>png</strong> on the left is 26KB. The <strong>.svg</strong> on the right is only 4KB.</p>
-                <p><img src="images/comp1950_logo.png" alt="COMP 1950 png logo"><img src="images/comp1950_logo.svg" alt="COMP 1950 svg logo"></p>
+                <p><img class="tabbed" src="images/comp1950_logo.png" alt="COMP 1950 png logo"><img class="tabbed" src="images/comp1950_logo.svg" alt="COMP 1950 svg logo"></p>
                 <p>Alternatively, you can use SVG code 'inline' with the <strong>svg</strong> tag. The advantage of doing this is it will result in one less request/response between the client and the server. The disadvantage to inline SVG is that it adds considerable clutter to your <strong>.html</strong> code. Just copy the source code from your <strong>.svg</strong> file and paste it directly into your <strong>.html</strong>!</p>
                 <p><strong>&lt;svg viewBox="0 0 55 28"><br/>
-                <span class=”tabbed”>&lt;!-- svg code goes here... sometimes there is a LOT of code here! --></span><br/>
+                <span class="tabbed">&lt;!-- svg code goes here... sometimes there is a LOT of code here! --></span><br/>
                 &lt;/svg></strong></p>
                 <h3>SVG Tools</h3>
                 <p>Use an SVG application to help you create and manipulate your SVG code.</p>
@@ -259,9 +259,9 @@
                     <li>you may also wish to include a direct link for your users to download the file</li>
                 </ul>
                 <p><strong>&lt;audio controls="controls"><br/>
-                <span class=”tabbed”>&lt;source src="media/house-a-square.mpg" type="audio/mpeg" /><br/>
-                &lt;source src="media/house-a-square.mp3" type="audio/mp3" /><br/>
-                &lt;source src="media/house-a-square.ogg" type="audio/ogg" /></span><br/>
+                <span class="tabbed">&lt;source src="media/house-a-square.mpg" type="audio/mpeg" /></span><br/>
+                <span class="tabbed">&lt;source src="media/house-a-square.mp3" type="audio/mp3" /></span><br/>
+                <span class="tabbed">&lt;source src="media/house-a-square.ogg" type="audio/ogg" /></span><br/>
                 &lt;/audio></strong></p>
                 <audio controls="controls">
                     <source src="media/house-a-square.mp3" type="audio/mp3" />
@@ -282,13 +282,13 @@
                     <li><strong>autoplay="autoplay"</strong> begin playing video as soon as page is loaded *NOT very user friendly*</li>
                     <li>you may also wish to include a direct link for your users to download the file</li>
                 </ul>
-                <p><strong>&lt;video<span class=”tabbed”>preload="none"</span><br />
-                    <span class=”tabbed”>controls="controls"</span><br />
-                    <span class=”tabbed”>poster="media/poster-bear-in-water.jpg"></span><br /><br />
+                <p><strong>&lt;video<span class="tabbed">preload="none"</span><br />
+                    <span class="tabbed">controls="controls"</span><br />
+                    <span class="tabbed">poster="media/poster-bear-in-water.jpg"></span><br /><br />
 
-                    <span class=”tabbed”> &lt;source src="media/bear-in-water.webm" type="video/webm" /></span><br />
-                    <span class=”tabbed”> &lt;source src="media/bear-in-water.mp4" type="video/mp4" /></span><br />
-                    <span class=”tabbed”> &lt;source src="media/bear-in-water.ogg" type="video/ogg" /></span><br />
+                    <span class="tabbed"> &lt;source src="media/bear-in-water.webm" type="video/webm" /></span><br />
+                    <span class="tabbed"> &lt;source src="media/bear-in-water.mp4" type="video/mp4" /></span><br />
+                    <span class="tabbed"> &lt;source src="media/bear-in-water.ogg" type="video/ogg" /></span><br />
                 &lt;/video></strong></p>
                 <video preload="none" controls="controls" poster="media/poster-bear-in-water.jpg">
 	                <source src="media/bear-in-water.mp4" type="video/mp4" />

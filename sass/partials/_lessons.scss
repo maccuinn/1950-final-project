@@ -2,8 +2,32 @@
     padding: 0 30px 30px 30px;
     text-align: center;
 
+    //Individual Lessons
     .lesson-section {
         text-align: left;
+
+        h2 {
+            color: $dark-blue-font;
+        }
+
+        strong {
+            color: $dark-gray;
+        }
+
+        .tabbed {
+            padding-left: 40px;
+        }
+
+        video {
+            height: 100%;
+            max-width: 100%;
+          }
+
+        .centered {
+            display: block;
+            max-width: 100%;
+            @include margin-center;
+        }
     }
 }
 

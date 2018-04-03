@@ -42,11 +42,11 @@
                     <li><strong>title</strong> attribute allows the user to group stylesheets</li>
                     <li><strong>media</strong> attribute allows you to specify what medium this should be viewed in.</li>
                 </ul>
-                <p><strong>&lt;link<span class=”tabbed”>rel="stylesheet"</span><br />
-                    <span class=”tabbed”>href="http://www.mysite.com/css/styles.css"</span><br />
-                    <span class=”tabbed”>type="text/css"</span><br />
-                    <span class=”tabbed”>title="Main Style"</span><br />
-                    <span class=”tabbed”>media="screen" /></span></strong></p>
+                <p><strong>&lt;link rel="stylesheet"<br />
+                    <span class="tabbed">href="http://www.mysite.com/css/styles.css"</span><br />
+                    <span class="tabbed">type="text/css"</span><br />
+                    <span class="tabbed">title="Main Style"</span><br />
+                    <span class="tabbed">media="screen" /></span></strong></p>
                 <h3>Media variations: media attribute</h3>
                 <ul>
                     <li><strong>media="type"</strong> can be a powerful tool</li>
@@ -85,28 +85,28 @@
                 <h3>Persistent Styles</h3>
                 <p>Persistent styles apply in all cases, even when alternate styles are chosen.</p>
                 <p><strong>&lt;!-- rel="stylesheet" with NO title="" --><br />
-                &lt;link<span class=”tabbed”>rel="stylesheet"</span><br />
-                <span class=”tabbed”>href="css/persistent_styles.css" /></span></strong></p>
+                &lt;link rel="stylesheet"<br />
+                <span class="tabbed">href="css/persistent_styles.css" /></span></strong></p>
                 <h3>Preferred Styles</h3>
                 <p>Preferred styles will be the default, but will be replaced if alternate styles are chosen.</p>
                 <p><strong>&lt;!-- rel="stylesheet" AND a title="" --><br />
-                &lt;link<span class=”tabbed”>rel="stylesheet"</span><br />
-                    <span class=”tabbed”>href="css/default_styles.css"</span><br />
-                    <span class=”tabbed”>title="Standard Styling" /></span></strong></p>
+                &lt;link rel="stylesheet"<br />
+                    <span class="tabbed">href="css/default_styles.css"</span><br />
+                    <span class="tabbed">title="Standard Styling" /></span></strong></p>
                 <h3>Alternate Styles</h3>
                 <p>Alternate styles will not be applied by default, but may be chosen by the user agent. Each alternate stylesheet must have a <strong>title=""</strong>.</p>
                 <p><strong>&lt;!-- use rel="alternate stylesheet" for alternative stylesheets... --><br />
-                &lt;link<span class=”tabbed”>rel="alternate stylesheet"</span><br />
-                    <span class=”tabbed”>href="css/large_text.css"</span><br />
-                    <span class=”tabbed”>title="Large Text Styles" /></span></strong></p>
+                &lt;link rel="alternate stylesheet"<br />
+                    <span class="tabbed">href="css/large_text.css"</span><br />
+                    <span class="tabbed">title="Large Text Styles" /></span></strong></p>
                 <h3>Grouping Stylesheets</h3>
                 <p>If more than one link tag shares the same <strong>title=""</strong> then they will be grouped together.</p>
                 <p><strong>&lt;-- group stylesheets with shared title="" --><br />
-                &lt;link<span class=”tabbed”>rel="alternate stylesheet"</span><br />
-                    <span class=”tabbed”>href="css/monchrome_layout.css"</span><br /><span class=”tabbed”>title="Monochrome Styles"	/></span><br />
-                &lt;link<span class=”tabbed”>rel="alternate stylesheet"</span><br />
-                    <span class=”tabbed”>href="css/monchrome_fonts.css"</span><br />
-                    <span class=”tabbed”>title="Monochrome Styles" /></span></strong></p>
+                &lt;link rel="alternate stylesheet"<br />
+                    <span class="tabbed">href="css/monchrome_layout.css"</span><br /><span class="tabbed">title="Monochrome Styles"	/></span><br />
+                &lt;link rel="alternate stylesheet"<br />
+                    <span class="tabbed">href="css/monchrome_fonts.css"</span><br />
+                    <span class="tabbed">title="Monochrome Styles" /></span></strong></p>
                 <p>To enable alternate stylesheet switching, you can either apply some javascript to manage the switch with hyperlinks, or use <a href="https://support.mozilla.org/en-US/questions/841578" target="_blank">Firefox for alternate stylesheets</a>.</p>
             </section>
             <section class="lesson-section import">
@@ -144,7 +144,7 @@
                 &lt;link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet" /></strong></p>
                 <p><strong>/* use the font in the CSS */<br />
                 selector{<br />
-                    <span class=”tabbed”>font-family: 'Bungee', cursive;</span><br />
+                    <span class="tabbed">font-family: 'Bungee', cursive;</span><br />
                 }</strong></p>
                 <p>No longer stuck with 'Arial', 'Helvetica', 'Georgia' and the rest.</p>
                 <h3>Serve Fonts From Your Website</h3>
@@ -159,15 +159,15 @@
                 </ul>
                 <p><strong>/* load the font in CSS */<br />
                 @font-face {<br />
-                    <span class=”tabbed”>font-family: 'alex_brushregular';</span><br />
-                    <span class=”tabbed”>src: url('/fonts/alexbrush-regular-webfont.woff2') format('woff2'),</span><br />
-                    <span class=”tabbed”>url('/fonts/alexbrush-regular-webfont.woff') format('woff'),</span><br />
-                    <span class=”tabbed”>url('/fonts/alexbrush-regular-webfont.ttf') format('tff');</span><br />
+                    <span class="tabbed">font-family: 'alex_brushregular';</span><br />
+                    <span class="tabbed">src: url('/fonts/alexbrush-regular-webfont.woff2') format('woff2'),</span><br />
+                    <span class="tabbed">url('/fonts/alexbrush-regular-webfont.woff') format('woff'),</span><br />
+                    <span class="tabbed">url('/fonts/alexbrush-regular-webfont.ttf') format('tff');</span><br />
                 }</strong></p>
                 <p><strong>/* use the font in CSS */<br />
                 selector{<br />
-                    <span class=”tabbed”>font: bold 20px alex_brushregular ;</span><br />
-                    <span class=”tabbed”>color:#555;</span><br />
+                    <span class="tabbed">font: bold 20px alex_brushregular ;</span><br />
+                    <span class="tabbed">color:#555;</span><br />
                 }</strong></p>
                 <p>Don't get carried away with wild font choices. Some fonts have very poor readability, reducing accessibility.</p>
             </section>

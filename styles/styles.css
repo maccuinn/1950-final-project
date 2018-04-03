@@ -820,6 +820,20 @@ footer {
   text-align: center; }
   .lesson-content .lesson-section {
     text-align: left; }
+    .lesson-content .lesson-section h2 {
+      color: #003760; }
+    .lesson-content .lesson-section strong {
+      color: #2C2C2C; }
+    .lesson-content .lesson-section .tabbed {
+      padding-left: 40px; }
+    .lesson-content .lesson-section video {
+      height: 100%;
+      max-width: 100%; }
+    .lesson-content .lesson-section .centered {
+      display: block;
+      max-width: 100%;
+      margin-left: auto;
+      margin-right: auto; }
 
 .all-lessons {
   display: grid;

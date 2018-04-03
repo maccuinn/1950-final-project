@@ -86,7 +86,7 @@
                     <li>Click: <strong>Connect</strong></li>
                     <li>If you experience connectivity problems, re-check your input, or ask your instructor for assistance.</li>
                 </ol>
-                <img src="images/filezilla_screenshot.png" alt="Filezilla">
+                <img class="centered" src="images/filezilla_screenshot.png" alt="Filezilla">
             </section>
             <section class="lesson-section tools">
                 <h2>Tools</h2>
@@ -264,9 +264,12 @@
                 <h3>Code Style and Organization</h3>
                 <p>In COMP1950 students are expected to present a readable, well organized code style:</p>
                 <ul>
-                    <li>Comment <strong>all code</strong> with your name (or nickname if you prefer). Do this for all text based files (<strong>.html</strong>, <strong>.css</strong>, <strong>.js</strong>, <strong>.php</strong>, etc)<img src="images/html_commenting.png" alt"HTML Commenting"><img src="images/css_commenting.png" alt"CSS Commenting"></li>
-                    <li>In HTML, use carriage return and tabs to indicate parent-child tag relationships. Likewise, code your CSS to make it easy to see which rules are applied to each selector.<img src="images/html_tag_relationship.png" alt"HTML Tag Relationship"></li>
-                    <li>Separate different file types into folders. At minimum, keep all non-html files in their own folder. If you like you can make a dedicated 'html' folder for your <strong>.html</strong> files as well.<img src="images/folder_structure.png" alt"Folder Structure"></li>
+                    <li>Comment <strong>all code</strong> with your name (or nickname if you prefer). Do this for all text based files (<strong>.html</strong>, <strong>.css</strong>, <strong>.js</strong>, <strong>.php</strong>, etc)<br />
+                    <img class="tabbed" src="images/html_commenting.png" alt"HTML Commenting"><br /><img class="tabbed" src="images/css_commenting.png" alt"CSS Commenting"></li>
+                    <li>In HTML, use carriage return and tabs to indicate parent-child tag relationships. Likewise, code your CSS to make it easy to see which rules are applied to each selector.<br />
+                    <img class="tabbed" src="images/html_tag_relationship.png" alt"HTML Tag Relationship"></li>
+                    <li>Separate different file types into folders. At minimum, keep all non-html files in their own folder. If you like you can make a dedicated 'html' folder for your <strong>.html</strong> files as well.<br />
+                    <img class="tabbed" src="images/folder_structure.png" alt"Folder Structure"></li>
                     <li>Use the <strong>.html</strong> extension for all HTML files (not <strong>.htm</strong>). Use the typical extension for all other text-based files.</li>
                     <li>Write structurally valid HTML code: <a href="http://validator.w3.org/" target="_blank">W3C HTML validator</a></li>
                     <li>Write syntactically valid CSS code: <a href="http://jigsaw.w3.org/css-validator/" target="_blank">W3C CSS validator</a></li>
