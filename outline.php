@@ -12,7 +12,12 @@
         ?>
     </div>
     <div class="outline-page">
-        <img src="/images/outline.jpg" alt="Computer screens overlayed with 1s and 0s.">
+        <img srcset="/images/outline.jpg 1920w,
+                            /images/outline-medium.png 850w,
+                            /images/outline-small.png 420w"
+                    src="/images/outline.jpg"
+                    sizes="(max-width: 1200px) 100%"
+                    alt="Computer screens overlayed with 1s and 0s.">
         <div class="outline-head">
             <h2>Course Outline:</h2>
             <p class="left-one">Course: COMP 1950</p>

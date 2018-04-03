@@ -11,7 +11,12 @@
             include 'templates/header.php';
         ?>
         <div class="banner">
-            <img src="/images/banner-img.jpg" alt="Woman off to the side working on a laptop">
+            <img srcset="/images/banner-img.jpg 1920w,
+                            /images/banner-medium.png 850w,
+                            /images/banner-small.png 420w"
+                    src="/images/banner-img.jpg"
+                    sizes="(max-width: 1200px) 100%"
+                    alt="Woman off to the side working on a laptop">
             <h1 class="header-1">Web Development</h1>
             <h1 class="header-2">And Design 2</h1>
         </div>

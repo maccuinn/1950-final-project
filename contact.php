@@ -13,7 +13,12 @@
     </div>
 
     <div class="contact-page">
-        <img src="/images/coffee-cropped.jpg" alt="Woman looking accross the street with a blurred background.">
+        <img srcset="/images/coffee-cropped.jpg 1920w,
+                            /images/coffee-medium.png 850w,
+                            /images/coffee-small.png 420w"
+                    src="/images/coffee-cropped.jpg"
+                    sizes="(max-width: 1200px) 100%"
+                    alt="Close up picture of coffee on a table with pen and paper.">
         <div class="contact-info">
             <div class="course-contact">
                 <h2>Give Us A <span>Shout</span></h2>
