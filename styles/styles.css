@@ -1018,10 +1018,38 @@ footer {
       grid-area: right-one; }
     .outline-page .outline-head .right-two {
       grid-area: right-two; }
+    @media screen and (max-width: 850px) {
+      .outline-page .outline-head {
+        grid-template-columns: 1fr 2fr 1fr 1fr;
+        grid-template-areas: ". header header ." ". left-one right-one ." ". left-two right-two ." ". prereq prereq ."; }
+        .outline-page .outline-head h2 {
+          justify-self: center; } }
+    @media screen and (max-width: 670px) {
+      .outline-page .outline-head {
+        grid-row-gap: 0;
+        padding: 1em 0; } }
+    @media screen and (max-width: 420px) {
+      .outline-page .outline-head {
+        padding: 1em 1em;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "header header" "left-one right-one" "left-two right-two" "prereq prereq"; } }
   .outline-page .description {
     padding: 4em 6em; }
     .outline-page .description h2 {
       margin-bottom: 2em; }
+    @media screen and (max-width: 850px) {
+      .outline-page .description {
+        padding: 2em 4em; } }
+    @media screen and (max-width: 670px) {
+      .outline-page .description {
+        padding: 2em 2em; }
+        .outline-page .description h2 {
+          margin-bottom: 1em; } }
+    @media screen and (max-width: 420px) {
+      .outline-page .description {
+        padding: 2em 1em; }
+        .outline-page .description h2 {
+          margin-bottom: 1em; } }
   .outline-page .goals {
     background: #005385;
     color: #E0E4E7;
@@ -1034,6 +1062,13 @@ footer {
       margin-top: 0; }
     .outline-page .goals p {
       margin: 0 auto; }
+    @media screen and (max-width: 420px) {
+      .outline-page .goals {
+        padding: 2em 1em; }
+        .outline-page .goals h2 {
+          margin-bottom: 0; }
+        .outline-page .goals ul {
+          padding-left: 1em; } }
   .outline-page .outcomes {
     padding: 4em;
     margin: 0 auto; }
@@ -1047,6 +1082,24 @@ footer {
       font-weight: 700;
       letter-spacing: 1.4;
       padding-left: 2em; }
+    @media screen and (max-width: 850px) {
+      .outline-page .outcomes {
+        padding: 2em 4em; } }
+    @media screen and (max-width: 670px) {
+      .outline-page .outcomes {
+        padding: 2em 2em 0 2em; }
+        .outline-page .outcomes h2 {
+          margin-bottom: 1em; } }
+    @media screen and (max-width: 420px) {
+      .outline-page .outcomes {
+        padding: 2em 1em; }
+        .outline-page .outcomes h2 {
+          margin-bottom: 0; }
+        .outline-page .outcomes ul {
+          padding-left: 1em; }
+        .outline-page .outcomes p {
+          padding-left: 0;
+          text-align: center; } }
   .outline-page .evaluation table {
     background: rgba(250, 169, 22, 0.6);
     margin: 0 auto;
@@ -1066,6 +1119,22 @@ footer {
     .outline-page .evaluation table .bottom {
       border-top: 1px solid #003760;
       color: #721817; }
+  @media screen and (max-width: 670px) {
+    .outline-page .evaluation {
+      padding: 0 2em; }
+      .outline-page .evaluation h2 {
+        margin-bottom: 1em; } }
+  @media screen and (max-width: 420px) {
+    .outline-page .evaluation {
+      padding: 0.5em; }
+      .outline-page .evaluation table {
+        margin-bottom: 2em;
+        letter-spacing: initial; }
+        .outline-page .evaluation table caption {
+          padding: 0 0 1em 0;
+          font-size: 1.3em; }
+        .outline-page .evaluation table td {
+          font-size: .8em; } }
 
 .contact-page {
   display: flex;
