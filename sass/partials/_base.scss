@@ -10,7 +10,7 @@ body {
     }
 
     h2 {
-        @include font-header($fs: 1.5em, $color: $dark-gray, $lh: 1.5rem, $ls: 1.2);
+        @include font-header($fs: 1.5em, $color: $dark-gray, $lh: 1.5em, $ls: 1.2);
 
         @media screen and (max-width: $phoneLandscape) {
             @include font-header($fs: 1.2em);

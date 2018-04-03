@@ -1,4 +1,6 @@
 .home-page {
+    display: flex;
+    flex-direction: column;
     // banner styling
     .banner {
         position: relative;
@@ -72,6 +74,7 @@
         text-align: center;
 
         h2 {
+            margin-top: 0;
             span {
                 color: $red;
             }
@@ -202,16 +205,22 @@
         @media screen and (max-width: 715px) {
             width: 450px;
             margin-bottom: 2em;
+            align-items: center;
+
+            ul {
+                padding-left: 0;
+            }
         }
 
         @media screen and (max-width: 470px) {
-            width: 310px;
-        }
-
-        @media screen and (max-width: 470px) {
+            margin-bottom: 0;
             width: 410px;
-            .left li,
-            .right li {
+
+            ul {
+                list-style: none;
+            }
+
+            li {
                 font-size: 0.9em;
             }
         }
@@ -313,9 +322,99 @@
                 @include shadow();
                 border: 1px solid $off-white;
             }
+        }
+        @media screen and(max-width: 715px) {
+            display: none;
+        }
+    }
 
-            @media screen and (max-width: 470px) {
+    .secondary-nav-mobile {
+        display: none;
 
+        @media screen and(max-width: 715px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: $tablet-padding-section;
+
+            .prereq {
+                border: 1px solid $dark-gray;
+                margin: 1rem;
+                background: $off-white;
+                width: 300px;
+    
+                h3 {
+                    color: $red;
+                    text-align: center;
+                }
+    
+                p {
+                    padding: 0 0 0 1rem;
+                    margin: 0;
+                }
+    
+                p:nth-of-type(even) {
+                    font-style: italic;
+                }
+    
+                p:last-of-type {
+                    margin-bottom: 1rem;
+                }
+    
+                a {
+                    text-decoration: none;
+                    color: $red;
+                    font-weight: $fw-b;
+                }
+    
+                a:hover,
+                a:active,
+                a:focus {
+                    color: $dark-gray;
+                }
+            }
+
+            ul {
+                list-style: none;
+                padding-left: 0;
+                background: $font-blue;
+                width: 420px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                @media screen and(max-width: $phonePortrait) {
+                    width: 95%;
+                }
+            }
+
+            li {
+                width: 100%;
+                text-align: center;
+                padding: 1em;
+                border-bottom: 1px solid $off-white;
+            }
+
+            a {
+                text-decoration: none;
+                color: $dark-gray;
+                cursor: pointer;
+            }
+
+            a:hover,
+            a:active,
+            a:focus {
+                color: $yellow;
+            }
+            .register-btn {
+                
+                a {
+                    display: inline-block;
+                    padding: .5em 1em;
+                    background: $red;
+                    color: $off-white;
+                    @include shadow();
+                }
             }
         }
     }
@@ -368,6 +467,10 @@
         
         li {
             margin-bottom: .5rem;
+        }
+
+        @media screen and(max-width: $tabletLandscape) {
+            padding: $tablet-padding-section 1em;
         }
     }
 }
