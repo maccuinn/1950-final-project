@@ -35,7 +35,7 @@
                     <label for="radio-1">Current Student </label><input id="radio-1" type="radio" name="student" value="current" required>
                     <label for="radio-2">Prospective Student </label><input id="radio-2" type="radio" name="student" value="prospective" required>
                     <input type="text" name="fname" placeholder="first name*" required>
-                    <input type="text" name="snumber" placeholder="student number" pattern="^A/d{8}$">
+                    <input type="text" name="snumber" placeholder="student number" pattern="^A\d{8}$">
                     <input type="text" name="lname" placeholder="last name*" required>
                     <input type="email" name="email" placeholder="email*" required>
                     <textarea name="message" rows="5" placeholder="what can we help you with*" required></textarea>
