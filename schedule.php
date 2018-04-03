@@ -11,8 +11,15 @@
             include 'templates/header.php';
         ?>
     </div>
-        <div class="schedule-content">
-        <h1>Schedule</h1>
+    <img srcset="images/planner-350.jpg 350w, 
+            images/planner-500.jpg 500w,
+            images/planner-850.jpg 850w,
+            images/planner-1200.jpg 1200w" 
+            src="images/planner-1200jpg" 
+            sizes="(max-width: 1200px) 100vw,
+            1200px" alt="Day Planner">
+    <div class="schedule-content">
+        <h1>Course Schedule</h1>
         <div class="all-schedule-items">
             <section class="schedule-item">
                 <h2>Day 1</h2>
