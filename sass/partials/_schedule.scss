@@ -1,11 +1,12 @@
 .schedule-content {
-    padding: 0 30px 30px 30px;
+    padding: $desktop-padding-section 1em;
     h1{
         text-align: center;
+        margin-top: 0;
     }
 
     @media screen and (max-width: $tabletPortrait) {
-        padding: 0 20px 20px 20px;
+        padding: $tablet-padding-section 1em;
     }
 }
 
@@ -13,7 +14,7 @@
     @include grid-three-col;
 
     .schedule-item {
-        border: 3px $banner-lt-blue solid;
+        @include shadow();
         padding: 20px;
 
         h2 {

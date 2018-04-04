@@ -1,5 +1,9 @@
 .lesson-content{
-    padding: 0 30px 30px 30px;
+    h1 {
+        margin-top: 0;
+    }
+
+    padding: $desktop-padding-section 1em;
     text-align: center;
 
     //Individual Lessons
@@ -29,6 +33,11 @@
             @include margin-center;
         }
     }
+
+    @media screen and(max-width: $tabletPortrait) {
+        padding: $tablet-padding-section 1em;
+    }
+
 }
 
 .all-lessons {
