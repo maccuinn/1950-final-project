@@ -8,6 +8,7 @@
 
     //Individual Lessons
     .lesson-section {
+        padding-bottom: 1em;
         text-align: left;
 
         h2 {
@@ -36,6 +37,12 @@
 
     @media screen and(max-width: $tabletPortrait) {
         padding: $tablet-padding-section 1em;
+    }
+
+    @media screen and(max-width: $phoneLandscape) {
+        ul {
+            padding-left: 1em;
+        }
     }
 
 }

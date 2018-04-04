@@ -896,6 +896,7 @@ footer {
   .lesson-content h1 {
     margin-top: 0; }
   .lesson-content .lesson-section {
+    padding-bottom: 1em;
     text-align: left; }
     .lesson-content .lesson-section h2 {
       color: #003760; }
@@ -914,6 +915,9 @@ footer {
   @media screen and (max-width: 870px) {
     .lesson-content {
       padding: 2em 1em; } }
+  @media screen and (max-width: 670px) {
+    .lesson-content ul {
+      padding-left: 1em; } }
 
 .all-lessons {
   display: grid;
